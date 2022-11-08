@@ -1,6 +1,6 @@
-variable "env_name" {}
-
-output "output1" {
-  description = "env_name"
-  value       = var.env_name
+locals {
+  name = lower("${var.stack_name}-${var.environment}")
+  tags = {
+    Product = var.project
+  }
 }

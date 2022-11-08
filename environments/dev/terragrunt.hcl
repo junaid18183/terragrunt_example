@@ -5,7 +5,3 @@ include {
 terraform {
   source = "../../src"
 }
-
-inputs = {
-  env_name = "dev"
-}
