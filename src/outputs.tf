@@ -28,3 +28,8 @@ output "quoter" {
   description = "quoter"
   value       = var.quoter
 }
+
+output "vpc_module" {
+  description = "vpc_module"
+  value       = length(module.vpc) > 0 ? module.vpc[0].vpc_module : null
+}

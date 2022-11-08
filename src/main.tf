@@ -4,3 +4,8 @@ locals {
     Product = var.project
   }
 }
+
+module "vpc" {
+  source = "./modules/vpc"
+  count  = var.include_vpc_module ? 1 : 0
+}

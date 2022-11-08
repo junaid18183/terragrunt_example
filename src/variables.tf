@@ -27,3 +27,8 @@ variable "quoter" {
   description = "Quoter"
   type        = string
 }
+
+variable "include_vpc_module" {
+  type    = bool
+  default = false
+}
